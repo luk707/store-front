@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Bar from './header-bar'
 import { H1 } from './typography'
-
+import Container from './container'
 export interface HeaderProps {
   title: string
 }
@@ -9,9 +9,12 @@ export interface HeaderProps {
 class Header extends React.Component<HeaderProps> {
   render() {
     return (
-      <Bar>
-        <H1>{this.props.title}</H1>
-      </Bar>
+      <Container>
+        <Bar>
+          <H1>{this.props.title}</H1>
+          <button>Cart</button>
+        </Bar>
+      </Container>
     )
   }
 }

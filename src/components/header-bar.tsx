@@ -5,6 +5,4 @@ export default styled('nav')({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  backgroundColor: 'gray',
-  color: 'white',
 })
